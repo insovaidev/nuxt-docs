@@ -1,10 +1,10 @@
 <template>
   <div>
 <div class="flex items-center space-x-2 mb-4">
+  <pre>{{mountains}}</pre>
       <button  @click="$fetch">Refresh</button>
       <div v-show="$fetchState.pending" class="loading"></div>
     </div>
-
 
     <p v-if="$fetchState.error">An error occured :(</p>
     <div

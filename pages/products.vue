@@ -1,9 +1,11 @@
 <template>
   <div class="container mx-auto mt-8">
-    <button class="border-[1px] px-6 py-2 border-blue-400 rounded-xl" @click="showMountaint">Show Laycomponent</button>
-    <NuxtLink to="_slug">
-      -slug
-    </NuxtLink>
+    <button
+      class="border-[1px] px-6 py-2 border-blue-400 rounded-xl"
+      @click="showMountaint"
+    >
+      Show Lazycomponent
+    </button>
     <LazyProductCard v-if="show" />
   </div>
 </template>
@@ -16,10 +18,10 @@ export default {
     };
   },
   methods: {
-    showMountaint(){
-      this.show = true
-    }
-  }   
+    showMountaint() {
+      this.show = true;
+    },
+  },
 };
 </script>
 
